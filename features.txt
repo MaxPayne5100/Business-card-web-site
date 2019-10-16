@@ -1,0 +1,6 @@
+* skill bar with jQuery
+* css grid for portfolio
+* animation
+* usage of bootstrap
+* adaptive layout
+* usage of parallax
