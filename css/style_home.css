@@ -49,6 +49,28 @@
 	transition: all 0.5s ease-in-out;
 }
 
+.typewriter {
+  overflow: hidden;
+  border-right: .075em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .075em;
+  animation: 
+    typing 1.5s steps(15, end),
+    blink-caret .75s step-end 3;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100%}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
 @media screen and (max-width: 991px) {
   .page-header {
     background: var(--header-color);
@@ -63,5 +85,10 @@
   #home a {
   margin-top: 20px;
   font-size: 16px;
+ }
+
+ .typewriter {
+    border-right: 0;
+    animation: none;
  }
 }

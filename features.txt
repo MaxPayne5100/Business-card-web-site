@@ -2,5 +2,6 @@
 * css grid for portfolio
 * animation (done)
 * usage of bootstrap (done)
-* adaptive layout
+* adaptive layout (done)
 * usage of parallax (done)
+* css typewriter effect (done)
