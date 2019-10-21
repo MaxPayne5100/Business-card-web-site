@@ -1,0 +1,125 @@
+body,html {height: 100%;}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+  --header-color: rgba(29, 29, 29, 0.98);
+  --main_font: 'Permanent Marker', cursive;
+}
+  
+.nav-item a {
+	font-size: 17.5px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+ 
+.container-fluid-max {
+  max-width: 1440px;
+}
+ 
+.page-header .navbar {
+  padding: 0.7rem 0;
+}
+
+.animated-navbar-toggler-icon {
+    width: 25px;
+    height: 15px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-navbar-toggler-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    background: #f1f1f1;
+}
+
+.animated-navbar-toggler-icon span:nth-child(1) {
+    top: 0px;
+}
+
+.animated-navbar-toggler-icon span:nth-child(2), .animated-navbar-toggler-icon span:nth-child(3) {
+    top: 7px;
+}
+
+.animated-navbar-toggler-icon span:nth-child(4) {
+    top: 15px;
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(1) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);   
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(4) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+li img:hover {
+	box-shadow: 0 0 10px 4px black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+ .navbar-brand img {
+ 	width: 80px;
+ }
+
+ .nav-item a {
+	font-size: 15.5px;
+}
+}
+
+@media screen and (max-width: 768px) {
+ .navbar-brand img {
+ 	width: 70px;
+ }
+}

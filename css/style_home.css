@@ -1,0 +1,67 @@
+.page-header {
+  transition: background 0.5s ease-in-out;
+}
+
+.cover {
+  background: no-repeat center/cover;
+}
+
+.hero {
+  background-attachment: fixed;
+}
+ 
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.05)
+  );
+}
+ 
+.hero .container-fluid {
+  z-index: 1;
+}
+
+#home h1 {
+	font-family: var(--main_font);
+	font-size: 70px;		
+	text-shadow: 7px 7px 5px black;
+}
+
+#home a {
+	margin-top: 15px;
+	padding: 10px 15px 10px 15px;
+	background-color: #1d1d1d;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;		
+}
+
+#home a:hover {
+	background-color: #ededed;
+	color: #1d1d1d;
+	transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 991px) {
+  .page-header {
+    background: var(--header-color);
+  }
+  
+  #home h1 {
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 3em;
+  }
+
+  #home a {
+  margin-top: 20px;
+  font-size: 16px;
+ }
+}
