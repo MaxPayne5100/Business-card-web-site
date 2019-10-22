@@ -7,6 +7,7 @@
 	<link rel="icon" href="media/icons/FavIcon.png" type="images/png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style_portfolio.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
 </head>
 <body>
@@ -15,7 +16,7 @@
 		<div class="container-fluid container-fluid-max">
 		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
 			<a class="navbar-brand" href="index.html">
-				<img src="media/Logo.png" width="120" alt="Logo">
+				<img src="media/Logo.png" width="70" alt="Logo">
 			</a> 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar" 
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style='border-color: transparent'>
@@ -44,7 +45,39 @@
 
 	<!-- Main content -->
     <main>
-
+	    <section>
+			<div class="gallery">	
+				<div class="home">
+					<div class="photo first wow fadeIn" data-wow-duration="1.7s" data-wow-offset="20">
+						<img src="media/portfolio/road.jpg" alt="Las Vegas">
+					</div>
+					<div class="photo second wow fadeIn" data-wow-duration="1.7s" data-wow-offset="20">
+						<img src="media/portfolio/flower.jpg" alt="Flower">
+					</div>
+					<div class="photo third wow fadeIn" data-wow-duration="1.7s" data-wow-offset="20">
+						<img src="media/portfolio/paris.jpg" alt="Paris">
+					</div>
+					<div class="photo fourth wow fadeIn" data-wow-duration="1.7s" data-wow-offset="20">
+						<img src="media/portfolio/workspace.jpg" alt="Workspace">
+					</div>
+					<div class="photo fifth wow fadeIn" data-wow-duration="1.7s" data-wow-offset="20">
+						<img src="media/portfolio/fruits.jpg" alt="Fruits">
+					</div>
+					<div class="photo sixth wow fadeIn" data-wow-duration="1.7s" data-wow-offset="20">
+						<img src="media/portfolio/cat.jpg" alt="Cat">
+					</div>	
+					<div class="photo seventh wow fadeIn" data-wow-duration="1.7s" data-wow-offset="20">
+						<img src="media/portfolio/prague.jpg" alt="Prague">
+					</div>
+					<div class="photo eighth wow fadeIn" data-wow-duration="1.7s" data-wow-offset="20">
+						<img src="media/portfolio/girl.jpg" alt="Girl">
+					</div>
+					<div class="photo ninth wow fadeIn" data-wow-duration="1.7s" data-wow-offset="20">
+						<img src="media/portfolio/nature.jpg" alt="Nature">
+					</div>
+				</div>
+			</div>
+		</section>
     </main>
 
 	<!-- Footer -->
@@ -57,7 +90,7 @@
 	      <li class="list-inline-item p-1 pl-md-2">
 	          <img src="media/icons/social media/instagram.png" width="44" alt="Instagram">
 	      </li>
-	      <li class="list-inline-item p-1 pl-md-2">
+	      <li class="list-inline-item p-1 pl-md-2 smaller">
 	          <img src="media/icons/social media/google-plus.png" width="49" alt="Google Plus">
 	      </li>
 	      <li class="list-inline-item p-1 pl-md-2">
@@ -79,6 +112,11 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/script.js"></script>	
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/wow.min.js"></script>
+          <script>
+          new WOW().init();
+          </script>
+	<!-- Scripts -->
 </body>
 </html>

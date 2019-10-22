@@ -1,4 +1,10 @@
-body,html {height: 100%;}
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 * {
 	margin: 0;
@@ -110,16 +116,24 @@ li img:hover {
 
 @media screen and (max-width: 991px) {
  .navbar-brand img {
- 	width: 80px;
+ 	width: 70px;
  }
 
  .nav-item a {
-	font-size: 15.5px;
+	font-size: 15px;
 }
 }
 
-@media screen and (max-width: 768px) {
- .navbar-brand img {
- 	width: 70px;
- }
+@media screen and (max-width: 550px) {
+	li img {
+		width: 38px;
+	}
+
+	.smaller img {
+		width: 42px;
+	}
+
+	.text-center p {
+		font-size: 0.88em;
+	}
 }
