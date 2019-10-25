@@ -1,3 +1,107 @@
+  :root {
+    --contact_font: 'Muli', sans-serif;
+  }
   .page-header {
     background: var(--header-color);
   }
+
+  .nav-item a {
+	font-size: 16.5px;
+  }
+
+  section {
+  	margin-top: 106px;
+  }
+
+  .main_header {
+	margin: 0 auto;
+  	width: 100%;
+  	height: 250px;
+  	margin-bottom: 50px;
+  	background-image: url("../media/contact header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-position: right center;
+  	background-attachment: fixed;
+  }
+
+  .row label {
+  	font-size: 15px;
+  	padding-left: 5px;
+  }
+
+  .md-form textarea:focus, .md-form input:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: 0 0 3px 0.1px #1d1d1d;
+  }
+
+	.butt {
+		position: relative;
+		display: block;
+		width: 120px;
+		height: 34px;
+		line-height: 32px;
+		text-align: center;
+		background-color: white;
+		border: .05em solid #1d1d1d;
+		border-radius: 5px;
+		font-size: 15px;
+		font-weight: 500;
+		transition: .5s ease-in-out;
+		overflow: hidden;
+		cursor: pointer;
+	}
+
+	.butt span {
+		position: relative;
+		z-index: 2;
+	}
+
+	.butt::before {
+	 	position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: #1d1d1d;
+		top: 0;
+		left: -100%;
+		opacity: .8;
+		transition: .5s;
+	}
+
+	.butt:hover::before {
+	 	left: 0;
+	}
+
+	.butt:hover {
+	 	color: white !important;
+	}
+
+@media screen and (max-width: 991px) {
+  .nav-item a {
+	font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+	.contact_up p, .row label {
+		font-size: 0.9em;
+	}
+
+	.row div p {
+		font-size: 0.95em;
+	}
+
+	.contact_up img {
+		width: 37px;
+	}
+
+	.smaller_phone img {
+		width: 51px;
+	}
+
+	.butt {
+		font-size: 14px;
+	}
+}

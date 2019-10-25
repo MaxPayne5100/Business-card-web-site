@@ -7,7 +7,9 @@
 	<link rel="icon" href="media/icons/FavIcon.png" type="images/png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style_contact.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -15,7 +17,7 @@
 		<div class="container-fluid container-fluid-max">
 		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
 			<a class="navbar-brand" href="index.html">
-				<img src="media/Logo.png" width="100" alt="Logo">
+				<img src="media/Logo.png" width="70" alt="Logo">
 			</a> 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar" 
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style='border-color: transparent'>
@@ -44,11 +46,76 @@
 
 	<!-- Main content -->
     <main>
+    	<section class="mb-5">
+    		<div class="main_header text-white pt-5">
+			    <h2 class="h1-responsive text-center mt-4 mb-2" style="font-size: 45px"><b>Contact us</b></h2>
+			    <p class="text-center w-responsive mx-auto wow fadeIn" data-wow-duration="2.5s"><i>Feel free to drop us a line below!</i></p>
+		    </div>
 
+		    <div class="ml-4 ml-md-5 pl-1 pl-md-2 contact_up" style="font-family: var(--contact_font)">
+				<div class="row align-items-center mb-2">
+					<img class="mr-3" src="media/icons/contact/location.png" width="40" alt="address">
+					<p class="mb-0">Lviv,Ukraine</p>
+				</div>
+				<div class="row align-items-center mb-2 smaller_phone">
+					<img src="media/icons/contact/phone.png" width="55" alt="phone" style="margin-left: -8px; margin-right: 9px">
+					<p class="mb-0">Phone: +380990193586</p>
+				</div>
+				<div class="row align-items-center mb-5">
+					<img class="mr-3" src="media/icons/contact/email.png" width="40" alt="email">
+					<p class="mb-0">Email: bordun.mykhailo@gmail.com</p>
+				</div>
+			</div>
+
+		    <div class="row justify-content-center">
+		        <div class="col-md-9 mb-md-0 mb-5">
+					<p class="text-center text-md-left mb-4 wow fadeInLeft" data-wow-duration="1s" style="font-family: var(--contact_font)">Lets get in touch. Send me a message:</p>
+		            <form id="contact-form" name="contact-form" action="" method="POST">
+		                <div class="row">
+		                    <div class="col-md-6">
+		                        <div class="md-form mb-0">
+		                            <input type="text" id="name" name="name" class="form-control">
+		                            <label for="name" class=""><i>Your name</i></label>
+		                        </div>
+		                    </div>
+		                    <div class="col-md-6">
+		                        <div class="md-form mb-0">
+		                            <input type="text" id="email" name="email" class="form-control">
+		                            <label for="email" class=""><i>Your email</i></label>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="row">
+		                    <div class="col-md-12">
+		                        <div class="md-form mb-0">
+		                            <input type="text" id="subject" name="subject" class="form-control">
+		                            <label for="subject" class=""><i>Subject</i></label>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="row">
+		                    <div class="col-md-12">
+		                        <div class="md-form">
+		                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+		                            <label for="message"><i>Your message</i></label>
+		                        </div>
+		                    </div>
+		                </div>
+		            </form>
+
+		            <div class="d-flex justify-content-md-start justify-content-center mt-4">
+		                <a class="butt"><span>Send Message</span></a>
+		            </div>
+		        </div>
+		    </div>
+    	</section>
     </main>
+	<!-- Main content -->
 
 	<!-- Footer -->
-	<footer class="page-footer text-white pt-4" style='background-color: rgba(29, 29, 29, 0.98)'>
+	<footer class="page-footer text-white pt-4" style='background-color: rgba(29, 29, 29, 0.975)'>
 	  <div class="container-fluid container-fluid-max">
 	    <ul class="list-inline text-center">
 	      <li class="list-inline-item p-1 pl-md-2">
@@ -80,6 +147,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/wow.min.js"></script>
+          <script>
+          new WOW().init();
+          </script>	
 	<!-- Scripts -->
 </body>
 </html>
