@@ -1,4 +1,4 @@
-* skill bar with jQuery
+* skill bar with jQuery (done)
 * css grid for portfolio (done)
 * animation (done)
 * usage of bootstrap (done)

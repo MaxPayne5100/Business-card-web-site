@@ -126,11 +126,11 @@ li img:hover {
 
 @media screen and (max-width: 550px) {
 	li img {
-		width: 38px;
+		width: 35px;
 	}
 
 	.smaller img {
-		width: 42px;
+		width: 39px;
 	}
 
 	.text-center p {

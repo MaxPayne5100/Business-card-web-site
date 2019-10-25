@@ -1,12 +1,13 @@
   :root {
     --contact_font: 'Muli', sans-serif;
   }
+  
   .page-header {
     background: var(--header-color);
   }
 
   .nav-item a {
-	font-size: 16.5px;
+	font-size: 16px;
   }
 
   section {

@@ -3,5 +3,70 @@
   }
 
   .nav-item a {
-	font-size: 16.5px;
+	font-size: 16px;
   }
+
+  section {
+  	margin-top: 135px;
+  }
+
+  .skillbar {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	background: #eee;
+	height: 40px;
+	border-radius: 2px;
+	text-align: center;
+	transition: .5s linear;
+}
+
+.skillbar-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-weight: bold;
+	font-size: 13px;
+	color: white;
+	border-top-left-radius: 2px;	
+	border-bottom-left-radius: 2px;
+}
+
+.skillbar-title span {
+	display: block;
+	background: rgba(0,0,0,0.17);
+	padding: 0 12px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.skillbar-bar {
+	height: 40px;
+	width: 0;
+	border-radius: 2px;
+}
+
+.skillbar-bar-percent {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 15px;
+	height: 40px;
+	line-height: 40px;
+	color: rgba(0,0,0,0.7);
+}
+
+.count {
+	font-size: 30px;
+}
+
+.counter img {
+	border-radius: 50%;
+	box-shadow: 0 0 8px 5px rgba(58, 219, 253, 0.3);
+}
+
+@media screen and (max-width: 991px) {
+  .nav-item a {
+	font-size: 15px;
+  }
+}
