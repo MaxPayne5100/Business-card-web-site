@@ -34,7 +34,8 @@
   .md-form textarea:focus, .md-form input:focus {
     outline: none !important;
     border: none !important;
-    box-shadow: 0 0 3px 0.1px #1d1d1d;
+    -webkit-box-shadow: 0 0 3px 0.1px #1d1d1d;
+            box-shadow: 0 0 3px 0.1px #1d1d1d;
   }
 
 	.butt {
@@ -49,6 +50,8 @@
 		border-radius: 5px;
 		font-size: 15px;
 		font-weight: 500;
+		-webkit-transition: .5s ease-in-out;
+		-o-transition: .5s ease-in-out;
 		transition: .5s ease-in-out;
 		overflow: hidden;
 		cursor: pointer;
@@ -68,6 +71,8 @@
 		top: 0;
 		left: -100%;
 		opacity: .8;
+		-webkit-transition: .5s;
+		-o-transition: .5s;
 		transition: .5s;
 	}
 

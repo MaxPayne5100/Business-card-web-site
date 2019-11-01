@@ -10,6 +10,7 @@ This is example of a static [business card website](https://maxpayne5100.github.
 * adaptive layout
 * usage of parallax
 * css typewriter effect
+* number counter animation with jQuery
 
 ## Authors
 Created by Mykhailo Bordun

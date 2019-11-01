@@ -18,6 +18,8 @@
 	height: 40px;
 	border-radius: 2px;
 	text-align: center;
+	-webkit-transition: .5s linear;
+	-o-transition: .5s linear;
 	transition: .5s linear;
 }
 
@@ -62,7 +64,8 @@
 
 .counter img {
 	border-radius: 50%;
-	box-shadow: 0 0 8px 5px rgba(58, 219, 253, 0.3);
+	-webkit-box-shadow: 0 0 8px 5px rgba(58, 219, 253, 0.3);
+	        box-shadow: 0 0 8px 5px rgba(58, 219, 253, 0.3);
 }
 
 @media screen and (max-width: 991px) {

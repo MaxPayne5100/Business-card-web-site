@@ -1,4 +1,6 @@
 .page-header {
+  -webkit-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
 }
 
@@ -17,6 +19,18 @@
   right: 0;
   bottom: 0;
   left: 0;
+  background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(0, 0, 0, 0.5)),
+    color-stop(rgba(0, 0, 0, 0.25)),
+    to(rgba(0, 0, 0, 0.05))
+  );
+  background: -o-linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.05)
+  );
   background: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.25),
@@ -29,24 +43,26 @@
 }
 
 #home h1 {
-	font-family: var(--main_font);
-	font-size: 70px;		
-	text-shadow: 7px 7px 5px black;
+  font-family: var(--main_font);
+  font-size: 70px;    
+  text-shadow: 7px 7px 5px black;
 }
 
 #home a {
-	margin-top: 15px;
-	padding: 10px 15px 10px 15px;
-	background-color: #1d1d1d;
-	color: white;
-	font-size: 18px;
-	font-weight: 500;		
+  margin-top: 15px;
+  padding: 10px 15px 10px 15px;
+  background-color: #1d1d1d;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;   
 }
 
 #home a:hover {
-	background-color: #ededed;
-	color: #1d1d1d;
-	transition: all 0.5s ease-in-out;
+  background-color: #ededed;
+  color: #1d1d1d;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -56,15 +72,29 @@
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .075em;
-  animation: 
+  -webkit-animation: 
     typing 1.5s steps(10, end),
     blink-caret .75s step-end 3;
-    animation-fill-mode: forwards;
+          animation: 
+    typing 1.5s steps(10, end),
+    blink-caret .75s step-end 3;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 100%}
 }
 
 @keyframes typing {
   from { width: 0 }
   to { width: 100%}
+}
+
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
 }
 
 @keyframes blink-caret {
@@ -88,7 +118,8 @@
 
  .typewriter {
     border-right: 0;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
  }
 }
 
